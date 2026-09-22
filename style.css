@@ -145,3 +145,51 @@ body{
 .footer-nav-center{
     justify-content:center;
 }
+
+/* alleen op scherm 1: rond selectievakje, want je kan maar 1 product kiezen */
+#screen-product .checkbox{
+    border-radius:50%;
+}
+#screen-product .option input:checked + .checkbox::before,
+#screen-product .option input:checked + .checkbox::after{
+    display:none;
+}
+#screen-product .option input:checked + .checkbox{
+    background:var(--line);
+}
+
+/* bestelnummer op bedankt-scherm */
+.order-number{
+    font-size:16px;
+    margin-top:8px;
+    color:#333;
+}
+
+/* toppings-lijstjes: per drankje één groepje, maar er is er steeds maar 1 zichtbaar */
+.topping-group{
+    display:none;
+    flex-direction:column;
+    gap:10px;
+}
+.topping-group.active{
+    display:flex;
+}
+
+/* titel boven elk lijstje */
+.screen-title{
+    font-size:20px;
+    margin:0 0 16px 0;
+}
+
+/* overzicht van de bestelling */
+.overview-box{
+    border:1px solid var(--line);
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:15px;
+}
+.overview-box p{
+    margin:0;
+}

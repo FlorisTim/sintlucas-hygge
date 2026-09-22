@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wireframes - Bestellen</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
 
@@ -14,26 +13,27 @@
     <!-- SCHERM 1: PRODUCT + BESCHRIJVING -->
     <section class="screen active" id="screen-product">
         <div class="frame">
+            <h2 class="screen-title">Kies je drankje</h2>
             <label class="option">
-                <input type="checkbox" checked>
+                <input type="radio" name="product" value="coffee" checked>
                 <span class="checkbox"></span>
                 <span class="option-text">Coffee</span>
                 <span class="price">€2,00</span>
             </label>
             <label class="option">
-                <input type="checkbox">
+                <input type="radio" name="product" value="choco">
                 <span class="checkbox"></span>
                 <span class="option-text">Choco</span>
                 <span class="price">€2,50</span>
             </label>
             <label class="option">
-                <input type="checkbox">
+                <input type="radio" name="product" value="thee">
                 <span class="checkbox"></span>
                 <span class="option-text">Thee</span>
                 <span class="price">€1,80</span>
             </label>
             <label class="option">
-                <input type="checkbox">
+                <input type="radio" name="product" value="water">
                 <span class="checkbox"></span>
                 <span class="option-text">Water</span>
                 <span class="price">€1,00</span>
@@ -43,7 +43,7 @@
 
             <div class="footer-nav">
                 <span></span>
-                <button class="btn" onclick="goTo('screen-toppings')">Volgende</button>
+                <button class="btn" onclick="goToToppings()">Volgende</button>
             </div>
         </div>
     </section>
@@ -51,28 +51,123 @@
     <!-- SCHERM 2: TOPPINGS KEUZE -->
     <section class="screen" id="screen-toppings">
         <div class="frame">
-            <label class="option">
-                <input type="checkbox">
-                <span class="checkbox"></span>
-                <span class="option-text">Geen</span>
-            </label>
-            <label class="option">
-                <input type="checkbox">
-                <span class="checkbox"></span>
-                <span class="option-text">Marshmallow</span>
-            </label>
-            <label class="option">
-                <input type="checkbox" checked>
-                <span class="checkbox"></span>
-                <span class="option-text">Slagroom</span>
-            </label>
+            <h2 class="screen-title" id="toppings-title">Toppings</h2>
 
+            <!-- toppings bij Coffee -->
+            <div class="topping-group active" id="toppings-coffee">
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Geen</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Melk</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <span class="option-text">Slagroom</span>
+                </label>
+            </div>
+
+            <!-- toppings bij Choco -->
+            <div class="topping-group" id="toppings-choco">
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Geen</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Marshmallow</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <span class="option-text">Slagroom</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Chocoladesaus</span>
+                </label>
+            </div>
+
+            <!-- toppings bij Thee -->
+            <div class="topping-group" id="toppings-thee">
+                <label class="option">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <span class="option-text">Geen</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Melk</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Citroen smaak</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Aardbei smaak</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Engelse thee</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">Suiker 2x</span>
+                </label>
+            </div>
+
+            <!-- toppings bij Water -->
+            <div class="topping-group" id="toppings-water">
+                <label class="option">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <span class="option-text">Geen</span>
+                </label>
+                <label class="option">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="option-text">IJsblokjes</span>
+                </label>
+            </div>
 
             <div class="spacer"></div>
 
             <div class="footer-nav">
                 <button class="btn-secondary" onclick="goTo('screen-product')">Terug</button>
-                <button class="btn" onclick="goTo('screen-thanks')">Volgende</button>
+                <button class="btn" onclick="goToOverview()">Volgende</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHERM 2b: OVERZICHT VAN JE BESTELLING -->
+    <section class="screen" id="screen-overview">
+        <div class="frame">
+            <h2 class="screen-title">Jouw bestelling</h2>
+
+            <div class="overview-box">
+                <p><strong>Drankje:</strong> <span id="overview-product"></span></p>
+                <p><strong>Toppings:</strong> <span id="overview-toppings"></span></p>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="footer-nav">
+                <button class="btn-secondary" onclick="goTo('screen-toppings')">Terug</button>
+                <button class="btn" onclick="finishOrder()">Bestellen</button>
             </div>
         </div>
     </section>
@@ -83,6 +178,7 @@
             <div class="checkmark">✓</div>
             <h2 class="thanks-title">Bedankt!</h2>
             <p class="thanks-text">Kom naar de kassa</p>
+            <p class="order-number">Bestelnummer: <span id="order-number">—</span></p>
 
             <div class="spacer"></div>
 
@@ -93,6 +189,8 @@
     </section>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
