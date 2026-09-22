@@ -1,18 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wireframes - Bestellen</title>
+    <link rel="stylesheet" href="SintLucasHygge.css">
 </head>
 <body>
-    <div class="main">
-        <div class="item">
-            <img src="http://placekitten.com/200/300">
-            <div class="description">
 
+<div class="phone">
+
+    <!-- SCHERM 1: PRODUCT + BESCHRIJVING -->
+    <section class="screen active" id="screen-product">
+        <div class="frame">
+            <label class="option">
+                <input type="checkbox" checked>
+                <span class="checkbox"></span>
+                <span class="option-text">Coffee</span>
+                <span class="price">€2,00</span>
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                <span class="option-text">Choco</span>
+                <span class="price">€2,50</span>
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                <span class="option-text">Thee</span>
+                <span class="price">€1,80</span>
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                <span class="option-text">Water</span>
+                <span class="price">€1,00</span>
+            </label>
+
+            <div class="spacer"></div>
+
+            <div class="footer-nav">
+                <span></span>
+                <button class="btn" onclick="goTo('screen-toppings')">Volgende</button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- SCHERM 2: TOPPINGS KEUZE -->
+    <section class="screen" id="screen-toppings">
+        <div class="frame">
+            <label class="option">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                <span class="option-text">Geen</span>
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                <span class="option-text">Marshmallow</span>
+            </label>
+            <label class="option">
+                <input type="checkbox" checked>
+                <span class="checkbox"></span>
+                <span class="option-text">Slagroom</span>
+            </label>
+
+
+            <div class="spacer"></div>
+
+            <div class="footer-nav">
+                <button class="btn-secondary" onclick="goTo('screen-product')">Terug</button>
+                <button class="btn" onclick="goTo('screen-thanks')">Volgende</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHERM 3: BEDANKT / KOM NAAR DE KASSA -->
+    <section class="screen" id="screen-thanks">
+        <div class="frame frame-center">
+            <div class="checkmark">✓</div>
+            <h2 class="thanks-title">Bedankt!</h2>
+            <p class="thanks-text">Kom naar de kassa</p>
+
+            <div class="spacer"></div>
+
+            <div class="footer-nav footer-nav-center">
+                <button class="btn-secondary" onclick="goTo('screen-product')">Nieuwe bestelling</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    function goTo(id){
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
 </body>
 </html>
