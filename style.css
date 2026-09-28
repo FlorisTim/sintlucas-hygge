@@ -193,3 +193,27 @@ body{
 .overview-box p{
     margin:0;
 }
+
+/* kopjes binnen een topping-lijstje (bijv. Smaak / Suiker / Extra bij thee) */
+.group-title{
+    font-size:14px;
+    margin:10px 0 0 0;
+    color:#555;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+.group-title:first-child{
+    margin-top:0;
+}
+
+/* alle radiobuttons (kies er 1) krijgen een rond vakje, ook bij toppings */
+.option input[type="radio"] + .checkbox{
+    border-radius:50%;
+}
+.option input[type="radio"]:checked + .checkbox::before,
+.option input[type="radio"]:checked + .checkbox::after{
+    display:none;
+}
+.option input[type="radio"]:checked + .checkbox{
+    background:var(--line);
+}
