@@ -1,8 +1,11 @@
 import express from 'express';
 import fs from 'fs';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 let orderId = 0;
 
@@ -135,6 +138,6 @@ app.get('/:path', (req, res) => {
 
 })
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
     console.log(`App is listening on port ${port}`);
 })

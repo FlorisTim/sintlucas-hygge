@@ -8,10 +8,15 @@
 <body>
 <div class="phone">
     <h1>Pick your item</h1>
-    <button class="center_btn" onclick="window.location.href='./start?a=5'">START ORDERING</button>
+    <div id="order_list">
+    </div>
 </div>
+
 </body>
-<script src="../script.js">
-    fetchOrders();
+<script src="../script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        renderProducts();
+    });
 </script>
 </html>
