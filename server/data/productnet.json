@@ -1,0 +1,16 @@
+[
+  {
+    "product": "coffee",
+    "additions": [
+      {
+        "name": "Melk",
+        "type": "multi_select_except_first",
+        "items": [
+          "geen",
+          "milk",
+          "whip"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "geen",
+    "display": "Geen",
+    "cost": 0
+  },
+  {
+    "name": "coffee",
+    "display": "Coffee",
+    "cost": 1
+  },
+  {
+    "name": "tea",
+    "display": "Tea",
+    "cost": 1
+  },
+  {
+    "name": "choc",
+    "display": "Chocolate milk",
+    "cost": 2
+  },
+  {
+    "name": "mars",
+    "display": "Marshmallows",
+    "cost": 0.5
+  },
+  {
+    "name": "whip",
+    "display": "Slagroom",
+    "cost": 0.5
+  },
+  {
+    "name": "sugar",
+    "display": "Sugar cube",
+    "cost": 0.5
+  },
+  {
+    "name": "sugar",
+    "display": "Sugar cube",
+    "cost": 0
+  },
+  {
+    "name": "citroen",
+    "display": "Citroen smaak",
+    "cost": 0
+  },
+  {
+    "name": "aardbei",
+    "display": "Aardbei smaak",
+    "cost": 0
+  },
+  {
+    "name": "english",
+    "display": "English breakfast smaak",
+    "cost": 0
+  },
+  {
+    "name": "milk",
+    "display": "Melk",
+    "cost": 0
+  }
+]
