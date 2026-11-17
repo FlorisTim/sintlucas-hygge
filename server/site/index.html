@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control panel</title>
+    <script>
+        const server = "http://127.0.0.1:3000/";
+    document.addEventListener("DOMContentLoaded", () => {
+        const accountType = document.getElementById("accounttype");
+        const username = document.getElementById("username");
+        const pass = document.getElementById("password");
+        accountType.innerText = "Not authorized";
+
+        document.getElementById("login").addEventListener("click", async () => {
+            let test = (await fetch(server + "login", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    user: username.value,
+                    password: pass.value,
+                })
+            })).status
+            if (test === "ok") {
+                accountType.innerText = username.value;
+            }
+        })
+    })
+    </script>
+</head>
+<body>
+<h1 id="accounttype"></h1>
+<input id="username" type="text" placeholder="Account">
+<input id="password" type="password" placeholder="Password">
+<button id="login">Login</button>
+</body>
+</html>
