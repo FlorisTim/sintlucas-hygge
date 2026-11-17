@@ -23,7 +23,42 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.back{
+    font-size: 32px;
+    border-radius: 25px;
+    position: absolute;
+}
+
 .center_btn{
     font-size: 32px;
     border-radius: 25px;
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    gap: 15px;
+}
+
+input{
+    width: 25px;
+    height: 25px;
+    margin: auto;
 }

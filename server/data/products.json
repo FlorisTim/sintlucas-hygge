@@ -2,61 +2,73 @@
   {
     "name": "geen",
     "display": "Geen",
-    "cost": 0
+    "cost": 0,
+    "available": true
   },
   {
     "name": "coffee",
     "display": "Coffee",
-    "cost": 1
+    "cost": 1,
+    "available": true
   },
   {
     "name": "tea",
     "display": "Tea",
-    "cost": 1
+    "cost": 1,
+    "available": true
   },
   {
     "name": "choc",
     "display": "Chocolate milk",
-    "cost": 2
+    "cost": 2,
+    "available": true
   },
   {
     "name": "mars",
     "display": "Marshmallows",
-    "cost": 0.5
+    "cost": 0.5,
+    "available": true
   },
   {
     "name": "whip",
     "display": "Slagroom",
-    "cost": 0.5
+    "cost": 0.5,
+    "available": true
   },
   {
     "name": "sugar",
     "display": "Sugar cube",
-    "cost": 0.5
+    "cost": 0.5,
+    "available": true
   },
   {
     "name": "sugar",
     "display": "Sugar cube",
-    "cost": 0
+    "cost": 0,
+    "available": true
   },
   {
     "name": "citroen",
     "display": "Citroen smaak",
-    "cost": 0
+    "cost": 0,
+    "available": true
   },
   {
     "name": "aardbei",
     "display": "Aardbei smaak",
-    "cost": 0
+    "cost": 0,
+    "available": true
   },
   {
     "name": "english",
     "display": "English breakfast smaak",
-    "cost": 0
+    "cost": 0,
+    "available": true
   },
   {
     "name": "milk",
     "display": "Melk",
-    "cost": 0
+    "cost": 0,
+    "available": true
   }
 ]

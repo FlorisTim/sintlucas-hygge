@@ -3,12 +3,14 @@
     "product": "coffee",
     "additions": [
       {
-        "name": "Melk",
-        "type": "multi_select_except_first",
+        "name": "Topping / Melk",
+        "id": "toppings",
+        "type": "radial_first",
         "items": [
           "geen",
           "milk",
-          "whip"
+          "whip",
+          "mars"
         ]
       }
     ]
