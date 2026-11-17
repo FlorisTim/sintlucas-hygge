@@ -107,6 +107,11 @@ body{
     min-width:100px;
 }
 
+.frame {
+    min-height: 0;
+    overflow-y: auto;
+}
+
 /* prijzen op scherm 1 */
 .option-text{
     flex:1;
