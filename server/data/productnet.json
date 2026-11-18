@@ -3,12 +3,35 @@
     "product": "coffee",
     "additions": [
       {
-        "name": "Topping / Melk",
+        "name": "Melk",
+        "id": "toppings",
+        "type": "radial",
+        "items": [
+          "geen",
+          "milk"
+        ]
+      },
+      {
+        "name": "Suiker",
+        "id": "sugar",
+        "type": "radial",
+        "items": [
+          "geen",
+          "sugar",
+          "2_sugar"
+        ]
+      }
+    ]
+  },
+  {
+    "product": "choc",
+    "additions": [
+      {
+        "name": "Topping",
         "id": "toppings",
         "type": "radial_first",
         "items": [
           "geen",
-          "milk",
           "whip",
           "mars"
         ]

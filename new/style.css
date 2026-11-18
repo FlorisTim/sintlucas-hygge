@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .phone {
@@ -45,20 +46,77 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    gap: 5px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
 }
 
 label{
+    background: #777;
+
+    width: 100%;
+    justify-content: flex-start;
     display: flex;
     flex-direction: row;
     font-size: 32px;
+
     gap: 15px;
+    padding: 0;
+    height: 45px;
+    border-radius: 15px;
+}
+
+label > p{
+    margin: auto 0 auto 0;
+    font-size: 30px;
+}
+
+input:hover{
+    background: #ccc;
 }
 
 input{
-    width: 25px;
-    height: 25px;
-    margin: auto;
+    appearance: none;
+
+    border: 1px solid #fff;
+
+
+    width: 35px;
+    height: 35px;
+    margin: auto 0 auto 5px;
+
+    background: #aaa;
+}
+
+input:checked{
+    background: #fff;
+}
+
+input[type=radio]{
+    border-radius: 50%;
+}
+input[type=checkbox]{
+     border-radius: 5px;
+}
+
+.cost{
+    font-size: 20px;
+    margin: auto 5px auto auto;
+    min-width: 25px;
+    background: #555;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+}
+.big{
+    font-size: 42px;
 }

@@ -37,13 +37,13 @@
   },
   {
     "name": "sugar",
-    "display": "Sugar cube",
-    "cost": 0.5,
+    "display": "Suiker",
+    "cost": 0,
     "available": true
   },
   {
-    "name": "sugar",
-    "display": "Sugar cube",
+    "name": "2_sugar",
+    "display": "Suiker x2",
     "cost": 0,
     "available": true
   },
@@ -68,7 +68,7 @@
   {
     "name": "milk",
     "display": "Melk",
-    "cost": 0,
+    "cost": 0.5,
     "available": true
   }
 ]
