@@ -1,6 +1,6 @@
 const api = "http://127.0.0.1:3000"
 let allProducts;
-const productTemplate = `<button class="center_btn" onclick="window.location.href='../order?product=$ID'">$ITEM</button>;`
+const productTemplate = `<button class="center_btn" onclick="window.location.href='../order?product=$ID'">$ITEM</button>`
 
 function getProd(id){
     for (const p of allProducts){
